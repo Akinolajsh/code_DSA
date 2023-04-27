@@ -5,7 +5,7 @@ class Node {
   }
 }
 
-class Linklist07 {
+class Linklist12 {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -25,20 +25,22 @@ class Linklist07 {
     return this;
   }
 
-  remove() {
+  remove(val) {
     let current = this.tail;
     let newTail = current;
     while (current.next) {
-      this.tail = newTail;
-      this.tail = null;
+      this.tail = node;
+      this.tail = node;
     }
+    this.length--;
+    return current;
   }
 }
 
-let linklist07 = new Linklist07();
+let linklist12 = new Linklist12();
 
-console.log(linklist07.insert(40));
-console.log(linklist07.insert(400));
-console.log(linklist07.insert(4000));
-linklist07.remove();
-console.log(linklist07.insert(40000));
+console.log(linklist12.insert(12));
+console.log(linklist12.insert(122));
+console.log(linklist12.insert(1222));
+linklist12.remove();
+console.log(linklist12.insert(12222));
