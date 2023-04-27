@@ -5,13 +5,12 @@ class Node {
   }
 }
 
-class Linklist01 {
+class Linklist02 {
   constructor() {
     this.head = null;
     this.tail = null;
     this.length = 0;
   }
-
   insert(val) {
     let node = new Node(val);
     if (!this.head) {
@@ -35,14 +34,15 @@ class Linklist01 {
         this.tail = newTail;
         this.tail.next = null;
       }
-
       this.length--;
       return current;
     }
   }
 }
 
-let Linkedlist01 = new Linklist01();
+let Linkedlist02 = new Linklist02()
 
-console.log(Linkedlist01.insert(10));
-console.log(Linkedlist01.insert(100));
+console.log(Linkedlist02.insert(50));
+console.log(Linkedlist02.insert(500));
+Linkedlist02.remove();
+console.log(Linkedlist02.insert(50));
