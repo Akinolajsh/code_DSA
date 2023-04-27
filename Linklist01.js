@@ -5,7 +5,7 @@ class Node {
   }
 }
 
-class Linklist {
+class Linklist01 {
   constructor() {
     this.head = null;
     this.tail = null;
@@ -31,7 +31,6 @@ class Linklist {
     } else {
       let current = this.tail;
       let newTail = current;
-
       while (current.next) {
         this.tail = newTail;
         this.tail.next = null;
@@ -43,20 +42,7 @@ class Linklist {
   }
 }
 
-let Linkedlist = new Linklist();
+let Linkedlist01 = new Linklist01();
 
-console.log(Linkedlist.insert(10));
-console.log("");
-console.log(Linkedlist.insert(20));
-console.log("");
-console.log(Linkedlist.insert(30));
-console.log("");
-console.log(Linkedlist.insert(40));
-console.log("");
-console.log(Linkedlist.insert(50));
-console.log("");
-console.log(Linkedlist.length);
-console.log("");
-Linkedlist.remove();
-console.log(" ");
-console.log(Linkedlist.length);
+console.log(Linkedlist01.insert(10));
+console.log(Linkedlist01.insert(100));
